@@ -16,7 +16,7 @@ clientSocket.listen(5)
 # solve the address is already in use problem
 clientSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR,1)
 
-# a while loop helps multi-program
+# a while loop helps
 while True:
   (incomingSocket,address) = clientSocket.accept()
   print "we got a connection from %s!" % (str(address))
